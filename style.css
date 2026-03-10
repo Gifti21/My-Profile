@@ -9,6 +9,10 @@
 .logo .highlight {
     color:rgb(209, 123, 19);
 }
+body{
+    font-family:Arial,sans-serif; 
+    color:white; padding-top:80px;
+}
 #header{
     position:fixed;
     display:flex;
@@ -55,15 +59,7 @@ nav ul li a{
     display:flex;
     align-items:center;
     justify-content:center;
-    background-color:#1e1e1e;
-}
-#home::before{
-    content:'';
-    position:absolute;
-    top:0; left:0;
-    width:100%; height:100%;
-    background:rgba(0,0,0,0.5);
-    z-index:-1;
+    background-color:#04001d;
 }
 
 .background-video{
@@ -83,12 +79,12 @@ nav ul li a{
     color:#024792;
     border:2px solid #0af;
     border-radius:30px;
-    font-weight:600;
+    font-weight:bold;
     text-transform:uppercase;
     letter-spacing:1px;
-    box-shadow:0 0 20px rgba(0,123,255,0.5);
+    box-shadow:0 0 20px rgba(11, 124, 244, 0.5);
     backdrop-filter:blur(4px);
-    font-size:0.9rem;
+    font-size:0.5rem;
 }
 
 .home-page{
@@ -98,9 +94,8 @@ nav ul li a{
     gap:60px;
     flex-wrap:wrap;
     text-align:left;
-    padding-top:50px; /* keep below fixed header */
+    padding-top:50px;
 }
-.profile-container{flex-shrink:0;}
 .text-content{max-width:500px;}
 
 .home-page img{
@@ -124,16 +119,22 @@ nav ul li a{
     margin:0 0 10px;
     background:linear-gradient(90deg,#42a5f5,#1e88e5);
     background-clip:text;
-
     display:inline-block;
 }
-.wave{font-size:2rem; margin-left:10px; vertical-align:middle;}
+.wave{
+    font-size:2rem; 
+    margin-left:10px; 
+    vertical-align:middle;
+    animation:wave-animation 2s infinite;
+}
 .text-content h3{
-    font-size:1rem; 
+    font-size:1.5rem; 
     font-weight:300; 
-    margin-bottom:20px;}
+    margin-bottom:20px;
+    color:#03346b;
+}
 .text-content p{
-    font-size:0.75rem; 
+    font-size:1rem; 
     line-height:1.6; 
     margin-bottom:25px;}
 
@@ -157,10 +158,6 @@ nav ul li a{
 }
 .btn.secondary:hover{
     background:rgba(0,0,0,0.7);
-}
-body{
-    font-family:Arial,sans-serif; 
-    color:white; padding-top:80px;
 }
 #about{
     padding:20px; 
