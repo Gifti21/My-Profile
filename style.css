@@ -59,7 +59,9 @@ nav ul li a{
     display:flex;
     align-items:center;
     justify-content:center;
-    background-color:#04001d;
+    border-radius:25px;
+    box-shadow:0 0 40px #0af;
+
 }
 
 .background-video{
@@ -68,6 +70,8 @@ nav ul li a{
     width:100%; height:100%;
     object-fit:cover;
     z-index:-2;
+    backdrop-filter: blur(4px);
+
 }
 
 .opportunities{
@@ -75,16 +79,15 @@ nav ul li a{
     top:100px;
     right:40px;
     padding:12px 24px;
-    background:rgba(0,123,255,0.1);
-    color:#024792;
+    background:black;
+    color:#035a75;
     border:2px solid #0af;
     border-radius:30px;
-    font-weight:bold;
+    font-weight:600;
     text-transform:uppercase;
     letter-spacing:1px;
     box-shadow:0 0 20px rgba(11, 124, 244, 0.5);
-    backdrop-filter:blur(4px);
-    font-size:0.5rem;
+    font-size:0.75rem;
 }
 
 .home-page{
@@ -129,14 +132,16 @@ nav ul li a{
 }
 .text-content h3{
     font-size:1.5rem; 
-    font-weight:300; 
+    font-weight:600; 
     margin-bottom:20px;
-    color:#03346b;
+    color:#9f9206;
 }
 .text-content p{
     font-size:1rem; 
     line-height:1.6; 
-    margin-bottom:25px;}
+    margin-bottom:25px;
+    font-weight:400;
+}
 
 .home-page a{
     margin:10px;
