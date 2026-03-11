@@ -165,8 +165,24 @@ nav ul li a{
     background:rgba(0,0,0,0.7);
 }
 #about{
-    padding:20px; 
-    margin:20px; 
-    border-radius:12px; 
-    border:gray solid 1px;
+    padding:40px 20px;
+    border-radius:25px;
+    backdrop-filter:blur(4px);
+    text-align:center;
+    color: white;
+
+}
+
+
+.about-me{
+    text-align:center;
+    border-radius:25px;
+    display:inline-block;
+    justify-items: center;
+    padding:12px 24px;
+    color:hwb(195 90% 4%);
+    border:2px solid rgb(2, 5, 22);
+    font-weight:600;
+    box-shadow:0 0 20px rgba(11, 124, 244, 0.5);
+    font-size:1rem;
 }
