@@ -54,6 +54,17 @@ body { font-family: var(--font); background: var(--bg); color: var(--text); line
   background-image: linear-gradient(rgba(99,102,241,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(99,102,241,0.04) 1px, transparent 1px);
   background-size: 60px 60px;
 }
+.hero .shine {
+  position: absolute; inset: 0; z-index: -1;
+  background: radial-gradient(ellipse 80% 60% at 50% 50%, rgba(99,102,241,0.25) 0%, rgba(99,102,241,0.1) 40%, transparent 70%);
+  animation: shine-move 6s ease-in-out infinite;
+}
+@keyframes shine-move {
+  0%, 100% { opacity: 0.6; transform: scale(1); }
+  50%       { opacity: 1; transform: scale(1.15); }
+}
+  background-size: 60px 60px;
+}
 .opportunities {
   position: absolute; top: 2rem; right: 6%;
   display: flex; align-items: center; gap: 0.5rem;
